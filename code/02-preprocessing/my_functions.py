@@ -69,8 +69,15 @@ def fill_all_missing_values(data):
                     data[col].mode().item(),
                     inplace=True
                 )
+            
+            # Debug log
+            logging.debug(f'{col} transformed.')
 
-    # Exception handler
+    # Handle errors
     except:
+
+        # Raise TypeError
         raise TypeError('Please pass a pandas DataFrame with one or more columns.')
-        
+
+        # Log error
+        logging.error(f'Unable to transform input of type {type(data)}.')
