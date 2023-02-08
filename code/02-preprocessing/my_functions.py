@@ -4,7 +4,7 @@ import pandas as pd
 
 # Log config
 logging.basicConfig(
-    filename='../logs/my_functions.log',
+    filename='../../logs/my_functions.log',
     filemode='a',
     datefmt='%Y-%m-%d %H:%M:%S',
     level=logging.INFO
