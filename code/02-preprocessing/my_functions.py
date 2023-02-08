@@ -76,8 +76,8 @@ def fill_all_missing_values(data):
     # Handle errors
     except:
 
-        # Raise TypeError
-        raise TypeError('Please pass a pandas DataFrame with one or more columns.')
-
         # Log error
         logging.error(f'Unable to transform input of type {type(data)}.')
+
+        # Raise TypeError
+        raise TypeError('Please pass a pandas DataFrame with one or more columns.')
