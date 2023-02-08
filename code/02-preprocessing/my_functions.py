@@ -71,7 +71,7 @@ def fill_all_missing_values(data):
                 )
             
             # Debug log
-            logging.debug(f'{col} transformed.')
+            logging.info(f'{col} successfully transformed.')
 
     # Handle errors
     except:
